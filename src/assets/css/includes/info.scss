@@ -1,0 +1,73 @@
+.info{
+  margin-top: 50px;
+  margin-bottom: 150px;
+  &__slider{
+    margin-top: 25px;
+    &__title{
+      padding-bottom: 20px;
+      border-bottom: 1px solid #EFF1F5;
+      margin-top: 50px;
+    }
+  }
+  &__header{
+    margin-top: 40px;
+  }
+  &__share{
+    margin-left: 100px;
+    transition: color .2s;
+    svg{
+      margin-right: 10px;
+      vertical-align: middle;
+      path{
+        transition: fill .2s;
+      }
+    }
+    &:hover{
+      color: #0045BF;
+      opacity: 0.7;
+      svg path{
+        fill: #0045BF;
+
+      }
+    }
+  }
+  &__date{
+    font-size: 13px;
+    color: #000000;
+    opacity: 0.7;
+  }
+}
+
+.text{
+  font-size: 18px;
+  color: #000000;
+}
+
+.h2{
+  margin-top: 55px;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.h3{
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.h4{
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 24px;
+}
+.h5{
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.about__type-list, .info__list{
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 30px;
+}

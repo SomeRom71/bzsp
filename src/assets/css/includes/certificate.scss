@@ -1,0 +1,18 @@
+.certificate{
+  &__list{
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    .products{
+      &__item{
+        flex: 1 0 33.3333%;
+        &__img{
+          img{
+            width: 170px;
+            height: 260px;
+          }
+        }
+      }
+    }
+  }
+}

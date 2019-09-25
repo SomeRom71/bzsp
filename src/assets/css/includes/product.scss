@@ -1,0 +1,210 @@
+.product{
+  margin-top: 50px;
+  &__breadcrumbs{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__share{
+    display: flex;
+    align-items: center;
+    color: rgba(0,0,0,0.7);
+    svg{
+      margin-right: 10px;
+    }
+    &:hover{
+      color: #0045BF;
+      opacity: 0.7;
+      svg path{
+        fill: #0045BF;
+        stroke: #0045BF;
+      }
+    }
+  }
+  &__print{
+    color: rgba(0,0,0,0.7);
+    white-space: nowrap;
+    svg{
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    &:hover{
+      color: #0045BF;
+      opacity: 0.7;
+      svg path{
+        stroke: #0045BF;
+      }
+    }
+  }
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__title{
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 52px;
+    color: #1F242B;
+    .products__item__label{
+      position: static;
+      margin-left: 40px;
+      vertical-align: middle;
+    }
+  }
+  &__wrap{
+    display: flex;
+    margin-top: 115px;
+  }
+  &__img{
+    position: relative;
+    &__zoom{
+      top: 0;
+      right: -20px;
+      position: absolute;
+      display: inline-block;
+      width: 50px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  &__description{
+    margin-left: 100px;
+    b{
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    p{
+      margin-top: 10px;
+      font-size: 15px;
+      line-height: 24px;
+    }
+    &__download{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+      li{
+        font-size: 12px;
+        line-height: 16px;
+        white-space: nowrap;
+        &:hover{
+          color: #0045BF;
+        }
+      }
+      svg{
+        float: left;
+        margin-right: 10px;
+      }
+    }
+    &__title{
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      margin-top: 100px;
+      margin-bottom: 35px;
+    }
+  }
+  &__tabs{
+    border: 1px solid #0045BF;
+    border-radius: 5px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    &__item{
+      cursor: pointer;
+      height: 100%;
+      line-height: 47px;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      color: #0045BF;
+      width: 50%;
+      text-align: center;
+      &.active{
+        background: #0045BF;
+        color: #fff;
+      }
+    }
+  }
+  &__table{
+    tbody{
+      border-left: 1px solid #E8E8E8;
+      border-right: 1px solid #E8E8E8;
+    }
+    tr{
+      height: 55px;
+      &:hover{
+        color: #0045BF;
+        background: #F9F9FA;
+        .th{
+          background: #F9F9FA;
+        }
+      }
+
+    }
+    thead{
+      td{
+        border-bottom: 2px solid #000000;
+      }
+    }
+    td{
+      text-align: center;
+      min-width: 170px;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 16px;
+      border-bottom: 1px solid #E8E8E8;
+    }
+    &__wrap{
+      width: 100%;
+      overflow: auto;
+    }
+    &__small{
+      width: 100%;
+      tr{
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        line-height: 16px;
+        font-weight: bold;
+        height: 55px;
+      }
+      thead{
+        td{
+          border-bottom: 2px solid #000000;
+        }
+      }
+      td{
+        border-bottom: 1px solid #E8E8E8;
+      }
+    }
+    &__nav{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: rgb(0, 69, 191);
+      border-radius: 5px;
+      text-align: center;
+      line-height: 30px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      &__next{
+        right: -50px;
+      }
+      &__prev{
+        left: -50px;
+        opacity: 0.5;
+      }
+      &__wrap{
+        position: relative;
+      }
+    }
+  }
+  &__note{
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 25px;
+  }
+}

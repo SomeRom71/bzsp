@@ -1,0 +1,649 @@
+@media(max-width: 1200px){
+  .container{
+    width: 1024px;
+  }
+  .products{
+    &__list{
+      flex-wrap: wrap;
+    }
+    &__item{
+      flex: 1 0 33.3333%;
+    }
+  }
+}
+@media(max-width: 1060px){
+  .container{
+    width: 768px;
+  }
+  .quick-form{
+    &__text{
+      display: none;
+    }
+  }
+  .logo{
+    img{
+      width: 300px;
+    }
+  }
+  .slider{
+    &-item{
+      &__title{
+        font-size: 24px;
+        line-height: 33px;
+      }
+      &__text{
+        font-size: 13px;
+        line-height: 19px;
+      }
+      &__btn{
+        font-size: 14px;
+      }
+    }
+  }
+  .slider{
+    &-item{
+      &__item{
+        height: 450px;
+      }
+    }
+  }
+  .company{
+    &__list{
+      flex-wrap: wrap;
+    }
+  }
+  .footer{
+    &__top{
+      padding: 20px 0;
+      height: auto;
+      &__list{
+        flex-wrap: wrap;
+      }
+      &__item{
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      &__phones{
+        &__item{
+          span{
+            text-align: center;
+          }
+        }
+      }
+    }
+    &__soc{
+      justify-content: center;
+    }
+    &__language{
+      &__list{
+        margin-top: 30px;
+      }
+    }
+  }
+  .nav{
+    &__list{
+      &__item{
+        font-size: 18px;
+        margin-right: 15px;
+      }
+    }
+  }
+  .product{
+    &__title{
+      .products__item__label{
+        margin-top: 20px;
+        display: block;
+        width: 60px;
+        margin-left: 0;
+      }
+    }
+    &__print{
+      display: none;
+    }
+    &__share{
+      margin-top: 20px;
+    }
+    &__header{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__description{
+      &__download{
+        flex-wrap: wrap;
+        li{
+          width: 50%;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .news{
+    &__list{
+      &__item{
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media(max-width: 785px){
+  .container{
+    width: calc(100% - 30px);
+    margin: 0 15px;
+  }
+  .nav-icon{
+    display: block;
+  }
+  .nav{
+    order: 1;
+    &__list{
+      display: none;
+    }
+  }
+  .search{
+    margin-left: auto;
+  }
+  .slider{
+    &-item{
+      &__img{
+        width: 350px;
+      }
+    }
+  }
+  .header{
+    &__bottom{
+      height: 70px;
+    }
+  }
+  .company{
+    background-size: cover;
+  }
+  .catalog{
+    &__description{
+      width: auto;
+      margin-top: 70px;
+    }
+  }
+  .category{
+    &__menu{
+      display: none;
+    }
+  }
+  .product{
+    &__wrap{
+      flex-direction: column;
+      margin-top: 40px;
+    }
+    &__img{
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+    &__description{
+      margin-left: 0;
+      &__download{
+        flex-wrap: wrap;
+        li{
+          width: auto;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    &__table{
+      &__nav{
+        display: none;
+      }
+    }
+  }
+  .contact{
+    margin-bottom: 60px;
+    &__wrap{
+      flex-direction: column;
+    }
+  }
+}
+
+@media(max-width: 650px){
+  .slider{
+    &-item{
+      &__img{
+        width: 300px;
+      }
+    }
+  }
+  .slick-dots{
+    bottom: -70px;
+  }
+  .slider-item__next, .slider-item__prev{
+    bottom: -80px;
+  }
+  .footer{
+    &__top{
+      &__list{
+        flex-direction: column;
+        align-items: center;
+      }
+      &__item{
+        width: auto;
+      }
+    }
+    &__language{
+      &__list{
+        width: 250px;
+        margin: 0 auto;
+        li{
+          margin-right: 0;
+          width: 120px;
+        }
+      }
+    }
+    &__bottom{
+      padding: 20px 0 35px;
+      &__list{
+        flex-direction: column;
+        height: auto;
+        li{
+          width: auto;
+          margin-bottom: 30px;
+          text-align: center;
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .product{
+    margin-top: 30px;
+    &__title{
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+  .news{
+    &-page{
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    &-slider{
+      &__link{
+        font-size: 16px;
+      }
+    }
+    &__list{
+      &__item{
+        border: 1px solid #EFF1F5;
+        margin-bottom: 10px;
+        .news-slider__item{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 560px){
+  .slider{
+    height: auto;
+    padding: 55px 0;
+    &-item{
+      flex-direction: column;
+      &__img{
+        margin-top: 30px;
+      }
+    }
+  }
+  .slick-dots{
+    bottom: -35px;
+  }
+  .slider-item__next, .slider-item__prev{
+    bottom: -45px;
+  }
+  .header{
+    &__top{
+      &__contact{
+        &__item{
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  .products{
+    &__list{
+      border-left: 1px solid #F9F9FA;
+      border-top: 1px solid #F9F9FA;
+    }
+    &__item{
+      flex: 0 1 50%;
+      width: 50%;
+      border-right: 1px solid #F9F9FA;
+      border-bottom: 1px solid #F9F9FA;
+    }
+    &__title{
+      margin-bottom: 20px;
+      &__wrap{
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  }
+  .company{
+    &__list{
+      &__item{
+        width: 50%;
+        flex-direction: column;
+        align-items: flex-start;
+        p{
+          margin-left: 0;
+        }
+        span{
+          margin-bottom: 5px;
+        }
+      }
+    }
+    &__btn{
+      margin-top: 45px;
+    }
+  }
+  .news{
+    background: #F9F9FA;
+    &-slider{
+      &__link{
+        font-size: 16px;
+        line-height: 24px;
+      }
+      &__text{
+        font-size: 13px;
+      }
+    }
+    &__btn{
+      margin-top: 20px;
+    }
+  }
+  .catalog{
+    &__description{
+      font-size: 14px;
+      p{
+        font-style: 13px;
+      }
+    }
+  }
+  .category{
+    &__list{
+      .products{
+        &__item{
+          flex: 1 0 100%;
+          img{
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+  .breadcrumbs{
+    &__list{
+      li{
+        font-size: 11px;
+      }
+    }
+  }
+  .product{
+    &__img{
+      &__zoom{
+        display: none;
+      }
+      img{
+        width: 100%;
+      }
+    }
+    &__description{
+      &__download{
+        flex-wrap: wrap;
+        li{
+          width: 50%;
+          margin-bottom: 15px;
+        }
+      }
+      &__title{
+       font-size: 21px;
+       line-height: 27px;
+      }
+      &__img{
+        width: 100%;
+      }
+    }
+    &__table{
+      td{
+        font-size: 13px;
+      }
+      &__small{
+        width: 768px;
+      }
+      &-sm{
+        width: 100%;
+        overflow-x: scroll;
+      }
+    }
+  }
+  .certificate{
+    &__list{
+      .products{
+        &__item{
+          flex: 1 0 50%;
+          &__img{
+            img{
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .text{
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .news{
+    &__list{
+      &__item{
+        width: 100%;
+      }
+    }
+  }
+  .about{
+    &__type{
+      &-list{
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
+  .info{
+    &__list{
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  .h2{
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .h3{
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .h4, .h5{
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .contact{
+    &__table{
+      margin-top: 20px;
+      tr{
+        display: inline-table;
+        width: 100%;
+        border-bottom: 1px solid #E8E8E8;
+        margin: 10px 0;
+        &:first-child{
+          display: none;
+        }
+        th{
+          font-size: 15px;
+        }
+        td, th{
+          display: block;
+          border-bottom: none;
+          margin-bottom: 15px;
+          padding-left: 0;
+        }
+      }
+      &_hidden{
+        display: block;
+      }
+    }
+    &__list{
+      margin-right: 0;
+      &__item{
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .form{
+    padding: 45px 30px 30px;
+    &__list{
+      li{
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@media(max-width: 425px){
+  .title{
+    font-size: 28px;
+  }
+  .slider{
+    &-item{
+      &__btn{
+        width: auto;
+      }
+      &__img{
+        width: 180px;
+      }
+      &__next, &__prev{
+        width: 40px;
+        height: 40px;
+        line-height: 45px;
+      }
+      &__next{
+        right: 40px;
+      }
+    }
+    &-dots{
+      li{
+        padding: 0;
+        button:before{
+          width: 15px;
+        }
+      }
+    }
+  }
+  .header{
+    &__top{
+      display: none;
+    }
+  }
+  .logo{
+    img{
+      width: 190px;
+    }
+  }
+  .nav-overlay{
+    &.open{
+      height: 540px;
+    }
+    &__list{
+      li{
+        display: block;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+    &__language{
+      width: 200px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      display: flex;
+      li{
+        margin: 0;
+        flex: 1 1 50%;
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+  }
+  .slick-dots{
+    li{
+      margin: 0;
+    }
+  }
+  .products{
+    &__item{
+      padding: 20px 10px;
+      &__name{
+        font-size: 13px;
+        line-height: 13px;
+      }
+      img{
+        width: 90px;
+      }
+    }
+  }
+  .company{
+    &__text, &__text_sm{
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  .news{
+    background: #F9F9FA;
+    &-slider{
+      &__item{
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 5px;
+      }
+    }
+  }
+  .about{
+    &__slider{
+      .slider-item{
+        &__img{
+          margin-top: 0;
+        }
+      }
+      .slider__about{
+        .slider-dots{
+          bottom: 25px;
+          left: 15px;
+        }
+      }
+      .slider-item__prev, .slider-item__next {
+        bottom: 10px;
+        right: 5px;
+      }
+      .slider-item__next{
+        right: 45px;
+      }
+    }
+    &__note{
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+}

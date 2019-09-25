@@ -1,0 +1,110 @@
+.footer{
+  &__top{
+    background: #363D44;
+    height: 285px;
+    .container{
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__list{
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    &__item{
+      &:first-child{
+
+      }
+      &__name{
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+      &__map{
+        display: inline-block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+        &__link{
+          margin-top: 15px;
+          display: block;
+          svg{
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    &__phones{
+      &__item{
+        a{
+          font-weight: bold;
+        }
+        span{
+          margin-top: 15px;
+          display: block;
+          text-align: right;
+        }
+      }
+    }
+  }
+  &__soc{
+    display: flex;
+    margin-top: 26px;
+    align-items: center;
+    &__item{
+      margin-right: 23px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  &__language{
+    &__list{
+      text-align: center;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-top: 70px;
+      li{
+        display: inline-block;
+        margin-right: 30px;
+        cursor: pointer;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &__bottom{
+    background: #282F35;
+    &__list{
+      font-size: 0;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      li{
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+        width: 33.3333%;
+        display: inline-block;
+        &:last-child{
+          text-align: right;
+        }
+        &:nth-child(2){
+          text-align: center;
+        }
+      }
+    }
+    &__developers{
+      img{
+        vertical-align: middle;
+        margin-left: 15px;
+      }
+    }
+  }
+}

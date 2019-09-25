@@ -1,0 +1,260 @@
+/*  VARIABLES DE COLOR
+–––––––––––––––––––––––––––*/
+
+$dark: #282828;
+$red: #c2101a;
+
+
+/*  GENERALES
+–––––––––––––––––––––––––––*/
+html{
+  font-family: "PTSans";
+  font-size: 14px;
+}
+
+ol li{
+  list-style-type: decimal;
+  margin-left: 15px;
+}
+
+html, body, ul, ol{
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  text-decoration: none;
+}
+
+button{
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ------ Normalize ----- */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+a{
+  color: inherit;
+}
+
+ul, li, a{
+  text-decoration: none;
+  list-style: none;
+}
+
+input{
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: "Gilroy";
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+/* ------ Ho ----- */
+
+.dropdown{
+  position: relative;
+  &-list{
+    display: none;
+    position: absolute;
+    background: #fff;
+    top: 29px;
+    right: 0;
+    z-index: 9999;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    width: 120px;
+    li{
+      text-align: left;
+      white-space: nowrap;
+      text-align: center;
+      img{
+        margin-right: 5px;
+      }
+      &:hover{
+        color: #0045BF;
+        background: #EFF1F5;
+      }
+    }
+    &.active{
+      display: inline-block;
+    }
+  }
+}
+
+div, li{
+  outline: none;
+}
+
+.fancybox-blue{
+  .fancybox-bg{
+    background: rgb(2, 24, 63);
+    opacity: 0.8;
+  }
+  .fancybox-close-small{
+    svg{
+      color: #0045BF;
+    }
+  }
+}
+
+.fancybox-cert{
+  .fancybox-content:before{
+    content: " ";
+    background: #fff;
+    width: 130%;
+    margin: -25% 0 0 -15%;
+    display: block;
+    height: 130%;
+  }
+}
+
+.form{
+  width: 100%;
+  max-width: 570px;
+  background: #fff;
+  display: none;
+  &__title{
+    font-weight: bold;
+    font-size: 28px;
+    color: #000000
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    li{
+      width: calc(50% - 15px);
+      font-size: 14px;
+      color: #000000;
+      margin-bottom: 25px;
+      span{
+        color: #FF0000;
+      }
+    }
+    input{
+      border: 1px solid #EFF1F5;
+      height: 45px;
+      line-height: 45px;
+      font-size: 15px;
+      padding-left: 15px;
+      width: 100%;
+    }
+  }
+  &__icon{
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: #0045BF;
+  }
+  &__message{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: 100px;
+    border: 1px solid #EFF1F5;
+    max-height: 100px;
+    margin-top: 5px;
+  }
+  &__btn{
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 50px;
+    line-height: 50px;
+    width: 185px;
+    background: #0045BF;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+    transition: box-shadow .4s ease;
+    &:hover{
+      box-shadow: 0px 10px 15px rgba(0, 69, 191, 0.5);
+    }
+  }
+  &__file{
+    margin-top: 15px;
+    &__label{
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration-line: underline;
+      color: #0045BF;
+      svg{
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+#output{
+  li{
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 15px;
+    span.delete{
+      color: #FF0000;
+      font-size: 14px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    span.filesize{
+      display: block;
+      font-size: 12px;
+      font-weight: normal;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.th{
+  position: absolute;
+  height: 55px;
+  line-height: 55px!important;
+  background: #fff;
+}
+
+#img, #cert-modal{
+  display: none;
+}
+
+#file{
+  display: none;
+}
+
+.cant-scrl{
+  overflow: hidden;
+}
+
+#overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  transition: background .6s ease;
+  z-index: 20;
+  &.active{
+    display: block;
+    background: rgba(2, 24, 63, 0.8);
+  }
+}

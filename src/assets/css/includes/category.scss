@@ -1,0 +1,117 @@
+.category{
+  display: flex;
+  margin-top: 55px;
+  &__list{
+    flex-wrap: wrap;
+    .products__item{
+      flex: 1 0 33.3333%;
+      text-align: left;
+      &__img{
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+  &__menu{
+    display: inline-block;
+    margin-right: 30px;
+    li{
+      width: 270px;
+      padding-left: 25px;
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: normal;
+      display: flex;
+      height: 70px;
+      align-items: center;
+      color: #000;
+      border: 1px solid #EFF1F5;
+      border-bottom: none;
+      transition: all .4s ease;
+      &.active{
+        background: #0045BF;
+        color: #fff;
+        font-weight: bold;
+        &:hover{
+          border-left: 1px solid #EFF1F5;
+          color: #fff;
+        }
+      }
+      &:hover{
+        border-left: 4px solid #0045BF;
+        color: #0045BF;
+      }
+      &:last-child{
+        border-bottom: 1px solid #EFF1F5;
+      }
+    }
+  }
+}
+
+.breadcrumbs{
+  margin-top: 30px;
+  &__list{
+    li{
+      display: inline-block;
+      font-size: 13px;
+      line-height: 17px;
+      &:after{
+        content: " / ";
+        display: inline-block;
+      }
+      &:last-child{
+        opacity: 0.7;
+        &:after{
+          content: none;
+        }
+      }
+      a{
+        &:hover{
+          color: #0045BF;
+          border-bottom: 1px solid #0045BF;
+        }
+      }
+    }
+  }
+}
+
+.products{
+  &__item{
+    position: relative;
+    &__options{
+      margin-top: 35px;
+      li{
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        line-height: 18px;
+        color: #1F242B;
+        font-weight: normal;
+        span{
+          font-weight: bold;
+        }
+      }
+    }
+    &__label{
+      display: inline-block;
+      font-weight: bold;
+      font-size: 11px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 2px 5px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      &.new{
+        background: #30CD6F;
+      }
+      &.discount{
+        background: #FFA800;
+      }
+      &.req{
+        background: #7000FF;
+      }
+    }
+  }
+}

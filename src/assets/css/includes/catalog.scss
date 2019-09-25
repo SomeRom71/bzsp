@@ -1,0 +1,19 @@
+.catalog{
+  &__list{
+    flex-wrap: wrap;
+    .products__item{
+      flex: 1 0 25%;
+    }
+  }
+  &__description{
+    font-size: 15px;
+    line-height: 21px;
+    color: #000;
+    width: 84%;
+    margin-top: 100px;
+    margin-bottom: 75px;
+  }
+  &__breadcrumbs{
+    margin-bottom: 40px;
+  }
+}

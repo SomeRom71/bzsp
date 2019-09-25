@@ -1,0 +1,86 @@
+.contact{
+  margin-top: 55px;
+  margin-bottom: 160px;
+  &__wrap{
+    display: flex;
+    margin-top: 55px;
+  }
+  &__list{
+    margin-right: 100px;
+    &__item{
+      display: flex;
+      margin-bottom: 50px;
+      div{
+        flex: 0 1 auto;
+      }
+      svg{
+        margin-right: 21px;
+        flex-shrink: 0;
+      }
+      span{
+        font-weight: bold;
+        font-size: 14px;
+        color: #000000;
+      }
+      p{
+        font-size: 18px;
+        color: #000000;
+      }
+    }
+  }
+  &__table{
+    width: 100%;
+    tr{
+      height: 70px;
+      td, th{
+        text-align: left;
+        padding-left: 15px;
+        border-bottom: 1px solid #E8E8E8;
+      }
+      &:first-child{
+        font-size: 12px;
+        color: rgba(35, 35, 38, 0.5);
+      }
+    }
+    &_sm{
+      margin-top: 45px;
+      tr{
+        &:first-child{
+          font-size: 14px;
+          color: #000;
+        }
+      }
+    }
+    a{
+      text-decoration: underline;
+      color: #0045BF;
+    }
+    &_hidden{
+      display: none;
+      text-transform: uppercase;
+      font-size: 11px;
+      line-height: 16px;
+      color: rgba(35, 35, 38, 0.5);
+      margin-bottom: 5px;
+    }
+  }
+  &__markets{
+    margin-top: 30px;
+  }
+  &__country{
+    margin-top: 40px;
+    span{
+      margin-right: 20px;
+    }
+    select{
+      height: 50px;
+      padding: 0 20px;
+      border: 1px solid #EFF1F5;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 16px;
+      color: #232326;
+    }
+  }
+}
